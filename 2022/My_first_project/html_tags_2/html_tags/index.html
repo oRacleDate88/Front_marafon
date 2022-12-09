@@ -7,45 +7,58 @@
    <title>Part 3</title>
 </head>
 <body>
-   <form action="# metod="post" enctype="multipart/form-data"></form>
-
-   <div>
-   <input placeholder="Введите имя" type="text" name="username" value=""/>
-   </div>
-   <br/>
-   <div>
-   <input type="password" name="userpass" value=""/>
-   </div>
-   <div>
-      <p> <input checked type="radio" name="beer" value="lager"/> Светлое пиво</p>
-      <p> <input type="radio" name="beer" value="dark"/> Тёмное пиво</p>
-   </div>
-   <div>
-      <p> <input checked type="radio" name="beer2" value="lager"/> Светлое пиво</p>
-      <p> <input type="radio" name="beer2" value="dark"/> Тёмное пиво</p>
-   </div>
-   <div>
-      <p> <input type="checkbox" name="car" value="yes"/> Наличие авто </p>
-      <p> <input type="checkbox" name="car2" value="yes"/> Наличие авто 2</p>
-      <p> <input type="checkbox" name="car3" value="yes"/> Наличие авто 3</p>
-      <p> <input type="checkbox" name="car4" value="yes"/> Наличие авто 4</p>
-   </div>
-   <div>
-      <p><input type="file" name="foto"/></p>
-   </div>
-   <div>
-      <textarea name="text"></textarea>
-   </div>
-   <div>
-      <select name="color">
-         <option value="red">Красный</option>
-         <option selected value="yellow">Желтый</option>
-         <option value="blue">Синий</option>
-      </select>
-   </div>
-   <br/>
-   <div>
-      <button type="submit">Отправить</button>
-   </div>
+   <form action="#" method="get">
+      <div>
+         <p>Имя</p>
+         <input autofocus tabindex="1" name="name" type="text">
+      </div>
+      <div>
+         <p>Пароль</p>
+         <input placeholder="Введите пароль" tabindex="2" maxlength="6" name="password" type="password">
+      </div>
+      <div>
+         <p>Почта</p>
+         <input type="email" id="email" name="email" multiple>
+      </div>
+      <div>
+         <p>Пол</p>
+         <p><input tabindex="4" type="radio" name="manWoman" value="man">Муж </p>
+         <p><input tabindex="4" type="radio" name="manWoman" value="woman">Жен </p>
+      </div>
+      <div>
+         <p>Имущество</p>
+         <p><input checked tabindex="5" type="checkbox" name="car" value="yes">Автомобиль</p>
+         <p><input tabindex="6" type="checkbox" name="home" value="yes">Квартира</p>
+         <p><input disabled tabindex="7" type="checkbox" name="property" value="yes">Ценные бумаги</p>
+      </div>
+      <div> 
+         <p>Дополнительная информация</p>
+         <textarea tabindex="8" name="text"></textarea>
+      </div>
+      <div>
+         <p>Прикрепить фото</p>
+         <input tabindex="9" type="file" />
+      </div>
+      <div>
+         <p>Любимый цвет</p>
+         <select tabindex="10" name="groups">
+            <optgroup  label="Цвета">
+            <option selected value="red">Красный</option>
+            <option value="blue">Синий</option>
+            <option value="yellow">Жёлтый</option>
+            <option value="green">Зелёный</option>
+            </optgroup>
+            <optgroup label="Оттенки">
+            <option value="redBlue">Красно-Синий</option>
+            <option value="blueWhite">Сине-белый</option>
+         </optgroup>
+         </select>
+      </div>
+      <div>
+         <p>Действия</p>
+         <button tabindex="11" type="submit">Отправить</button>
+         <button tabindex="12" type="reset">Очистить</button>
+      </div>
+   </form>
 </body>
 </html>
